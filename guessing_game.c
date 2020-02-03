@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <time.h>
 
 int main(void) {
 	/*
@@ -10,7 +11,11 @@ int main(void) {
 		Google rand() and srand()
 	*/
 	//////////Your code here//////////
-	int secret = 77;
+	int range;
+	printf("Enter the range of the random number");
+	scanf("%d", &range);
+	srand(time(0)); 
+	int secret = rand()%range;
 
 	//////////End of the code/////////
 
