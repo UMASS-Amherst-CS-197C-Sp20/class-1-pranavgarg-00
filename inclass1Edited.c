@@ -36,7 +36,7 @@ int main(int argc, char** argv){
 	//example
 	int type_int = 0;
 	long type_long = 0;
-	printf("size of int+long: %lu\n", sizeof(int+long));
+	printf("size of int+long: %lu\n", sizeof(int)+sizeof(long));
 
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
@@ -133,8 +133,8 @@ int main(int argc, char** argv){
     print_string(s1);
     print_string(s2);
 
-    exit status for the OS, 0 means no error.
-    It is different than the C true/false value
+    //exit status for the OS, 0 means no error.
+    //It is different than the C true/false value
 	return 0;
 }
 
