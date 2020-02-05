@@ -36,7 +36,9 @@ int main(int argc, char** argv){
 	//example
 	int type_int = 0;
 	long type_long = 0;
-	printf("size of int+long: %lu\n", sizeof(int)+sizeof(long));
+	double type_double = 0.0;
+	printf("size of int+long: %lu\n", sizeof(type_int + type_long));
+	printf("size of long+double: %lu\n", sizeof(type_long + type_double));
 
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
@@ -154,7 +156,5 @@ void func1(int* i){
 
 */
 void print_string(char* str) {
-	char string[256];
-	strcpy(string, str);
-	printf("%s", string);
+	printf("%s", str);
 }
