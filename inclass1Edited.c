@@ -81,11 +81,13 @@ int main(int argc, char** argv){
 	*/
 	printf("#####student code start#####\n");
     //////////Your code here//////////
-	printf("Max value of signed int + 1", INT_MAX+1);
-	printf("Max value of unsigned int + 1", UINT_MAX+1);
-	printf("Max value of signed long + 1", LONG_MAX+1);
-	printf("Max value of float + 1", FLT_MAX+1);
-	printf("Max value of float + 1000", FLT_MAX+1000);
+	 printf("Max value of signed int + 1     :   %d\n", INT_MAX+1);
+	 printf("Max value of unsigned int + 1    :   %u\n", (unsigned int) UINT_MAX+1);
+	 printf("Max value of signed long + 1    :   %ld\n", (long) LONG_MAX+1);
+	 printf("Max value of float + 1     :   %g\n", (float) FLT_MAX+1.0);
+	 printf("Max value of float + 1000     :   %g\n", (float) FLT_MAX+1000.0);
+	
+	
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
 
