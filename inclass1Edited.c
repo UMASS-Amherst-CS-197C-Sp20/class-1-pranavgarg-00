@@ -36,7 +36,7 @@ int main(int argc, char** argv){
 	//example
 	int type_int = 0;
 	long type_long = 0;
-	printf("size of int+long: %lu\n", sizeof(int)+sizeof(long));
+	printf("size of int+long: %lu\n", sizeof(int+long));
 
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
@@ -130,11 +130,11 @@ int main(int argc, char** argv){
     }
 
     //TODO: uncommend below code after complete print_string fucntion
-    //print_string(s1);
-    //print_string(s2);
+    print_string(s1);
+    print_string(s2);
 
-    //exit status for the OS, 0 means no error.
-    //It is different than the C true/false value
+    exit status for the OS, 0 means no error.
+    It is different than the C true/false value
 	return 0;
 }
 
@@ -151,4 +151,10 @@ void func1(int* i){
 	Add a function that name as "print_string", which takes a string
 	as input and no output.
 	This function needs to print the string in the concole.
+
 */
+void print_string(char* str) {
+	char string[256];
+	strcpy(string, str);
+	printf("%s", string);
+}
